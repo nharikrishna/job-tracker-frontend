@@ -354,7 +354,7 @@ export default function Job() {
                                                 )}
                                             </p>
                                             {matchScore !== null && (
-                                                <p><strong>Match Score:</strong> {Math.round(matchScore * 100)}%</p>
+                                                <p><strong>Match Score:</strong> {Math.round(matchScore)}%</p>
                                             )}
                                             {suggestedKeywords.length > 0 && (
                                                 <p><strong>Suggested Keywords:</strong> {suggestedKeywords.join(", ")}</p>
