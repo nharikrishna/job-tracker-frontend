@@ -9,7 +9,7 @@ import {Button} from "@/components/ui/button";
 import {useEffect, useState} from "react";
 import {getCurrentUser} from "@/pages/Profile/client";
 import type {User} from "@/types/user";
-import {Pencil, User as UserIcon} from "lucide-react";
+import {User as UserIcon} from "lucide-react";
 
 export default function Profile() {
     const [user, setUser] = useState<User | null>(null);
@@ -45,10 +45,6 @@ export default function Profile() {
                             View and manage your account
                         </DialogDescription>
                     </div>
-                    <Button size="icon" variant="ghost"
-                            className="hover:bg-gray-100 rounded-full w-10 h-10">
-                        <Pencil className="w-5 h-5 text-gray-600"/>
-                    </Button>
                 </div>
 
                 <div className="mt-3">
