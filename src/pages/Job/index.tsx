@@ -327,7 +327,7 @@ export default function Job() {
                                                 <strong>Resume File:</strong>{" "}
                                                 {openJob.resume_file_path ? (
                                                     <a
-                                                        href={`${import.meta.env.VITE_REMOTE_SERVER}/${openJob.resume_file_path}`}
+                                                        href={`${openJob.resume_file_path}`}
                                                         target="_blank"
                                                         rel="noopener noreferrer"
                                                         className="text-blue-600 underline"
@@ -342,7 +342,7 @@ export default function Job() {
                                                 <strong>Job Description File:</strong>{" "}
                                                 {openJob.job_description_file_path ? (
                                                     <a
-                                                        href={`${import.meta.env.VITE_REMOTE_SERVER}/${openJob.job_description_file_path}`}
+                                                        href={`${openJob.job_description_file_path}`}
                                                         target="_blank"
                                                         rel="noopener noreferrer"
                                                         className="text-blue-600 underline"
